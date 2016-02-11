@@ -7,17 +7,20 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+public class LogIn extends Application {
 
-public class MainApp extends Application {
+    private Stage stage;
 
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
-        
+    public void start(Stage otherStage) throws Exception {
+        stage = otherStage;
+
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/LogIn.fxml"));
+
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/Styles.css");
-        
-        stage.setTitle("JavaFX and Maven");
+
+        stage.setTitle("Log In");
         stage.setScene(scene);
         stage.show();
     }
@@ -32,6 +35,11 @@ public class MainApp extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public void hideMyStage() {
+        stage.close();
+
     }
 
 }

@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mainClass>com.pharmacypos.MainApp</mainClass>
+        <mainClass>com.pharmacypos.LogIn</mainClass>
     </properties>
 
     <organization>

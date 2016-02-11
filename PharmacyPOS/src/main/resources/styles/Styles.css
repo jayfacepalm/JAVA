@@ -1,3 +1,11 @@
 .button {
     -fx-font-weight: bold;
 }
+
+#SideMenu{
+    -fx-background-color: #3b3b3b;
+}
+
+#header, #title, #body{
+    -fx-background-color: #efefef;
+}
